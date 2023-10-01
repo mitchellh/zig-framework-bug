@@ -1,0 +1,7 @@
+.{
+    .name = "harfbuzz",
+    .version = "2.13.2",
+    .dependencies = .{
+        .apple_sdk = .{ .path = "./apple-sdk" },
+    },
+}
