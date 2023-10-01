@@ -5,7 +5,7 @@ pub fn build(b: *std.Build) !void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const coretext_enabled = b.option(bool, "enable-coretext", "Build coretext") orelse false;
+    const coretext_enabled = b.option(bool, "enable-coretext", "Build coretext") orelse true;
     const freetype_enabled = b.option(bool, "enable-freetype", "Build freetype") orelse false;
 
     const upstream_root = "./harfbuzz";
